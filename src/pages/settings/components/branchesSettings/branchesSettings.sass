@@ -1,0 +1,34 @@
+@import '../../../../styles/variables'
+
+.branchesSettings
+    padding: 40px 20px
+    display: flex
+    flex-direction: column
+    align-items:  center
+    &__header
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 20px
+        width: 100%
+        width: 70%
+        .renameBranchBtn
+            background-color: $mainColor
+            color: #fff
+            border-radius: 8px
+            cursor: pointer
+            padding: 20px
+            display: grid
+            place-content: center
+            color: #000
+            font-weight: 500
+            font-size: 16px
+            border: none
+            &:hover
+                background-color: $buttonedMainColor !important
+                border: none
+                color: #fff !important
+        & h3
+            color: #fff
+    .branchesTableWrapper
+        width: 70%

@@ -1,0 +1,87 @@
+@import '../../../../styles/variables'
+
+.tariffSettings
+    padding: 40px 20px
+    display: flex
+    flex-direction: column
+    align-items: center
+    & h3
+        color: #fff
+        margin-bottom: 30px
+        line-height: 24px
+        text-align: center
+    .tariffsHead
+        width: 70%
+        background-color: $buttonedMainColor
+        padding: 10px
+
+        span
+            display: inline-block
+            color: $mainColor
+            text-align: center
+            &:first-child
+                width: 7%
+            &:nth-child(2)
+                width: 33%
+            &:nth-child(3)
+                width: 20%
+            &:nth-child(4)
+                width: 20%
+            &:nth-child(5)
+                width: 20%
+    .tariffs
+        display: flex
+        flex-direction: column
+        width: 70%
+        margin-top: 10px
+    .newTariff
+        width: 70%
+        margin-bottom: 20px
+    .tariff, .newTariff
+        display: flex
+        margin-top: 10px
+        align-items: center
+        gap: 5px
+        
+        span
+            width: 7%
+            display: inline-block
+            color: #fff
+            text-align: center
+        .tariffName
+            width: 33%
+            display: inline-block
+        .tariffPrice
+            width: 20%
+            display: inline-block
+        .tariffOnOffPrice
+            width: 20%
+            display: inline-block
+        div
+            width: 20%
+            display: flex
+            justify-content: center
+            gap: 5px
+            button
+                border: none
+                cursor: pointer
+                padding: 5px 15px
+                border-radius: 4px
+                font-size: 14px
+                font-weight: 500
+                height: 40px
+            .saveBtn
+                background-color: $mainColor
+                color: #000
+            .delBtn
+                background-color: $errorColor
+                color: #fff
+        input
+            height: 40px
+            padding: 0 10px
+            font-size: 14px
+            border: none
+            outline: none
+            border-radius: 4px
+
+        

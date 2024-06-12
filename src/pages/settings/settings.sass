@@ -1,0 +1,30 @@
+@import '../../styles/variables'
+
+.settings
+    background-color: $greyColor
+    border-radius: 8px
+    width: 1250px
+    margin: 0 auto
+    height: 100%
+    &__tabs
+        display: flex
+        border: 1px solid $greyColor
+        border-radius: 8px
+        justify-content: center
+        border-bottom: 2px solid $blackColor
+        &__tab
+            background-color: $blackColor
+            color: $mainColor
+            padding: 10px 40px
+            border: 1px solid $blackColor
+            border-left: none
+            cursor: pointer
+            border-right: 1px solid $mainColor
+            h3
+                font-weight: 500
+
+            &:last-child
+                border-right: none
+        .activeTab
+            background-color: $mainColor
+            color: $blackColor

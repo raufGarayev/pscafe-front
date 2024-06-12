@@ -1,0 +1,96 @@
+@import '../../../../styles/variables'
+    
+.selectedTable
+    width: 20%
+    background-color: $greyColor
+    border-radius: 8px
+    padding: 20px 30px
+    color: #fff
+    min-width: 300px
+    position: relative
+    .closeIcon
+        position: absolute
+        top: 10px
+        right: 10px
+        font-size: 20px
+    & p
+        font-weight: 500
+        border-bottom: 2px solid #fff
+        font-size: 18px
+        padding: 10px 0
+    .controlItem
+        margin-top: 20px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        gap: 20px
+        .checkOrdersIcon
+            color: $mainColor
+            font-size: 20px
+            cursor: pointer
+        .checkOrdersBtn
+            background-color: transparent
+            border: none
+            padding: 0
+            display: grid
+            place-items: center
+            &:hover
+                border: none !important
+                background-color: transparent !important
+        label
+            white-space: nowrap
+        select, input
+            outline: none
+            height: 40px
+            padding: 0 10px
+        select:hover
+            cursor: pointer
+    .controlBtns__helpers
+        display: flex
+        justify-content: center
+        margin-top: 20px
+        gap: 10px
+        button
+            width: 50px
+            height: 40px
+            display: grid
+            place-items: center
+            &:hover
+                border: 1px solid #fff !important
+            svg
+                width: 20px
+                height: 20px
+            &:first-child
+                svg
+                    color: orange
+            &:nth-child(2)
+                svg
+                    color: blue
+            &:last-child
+                svg
+                    color: red
+    .controlBtns__main
+        button
+            width: 100%
+            margin-top: 20px
+            height: 40px
+            display: flex
+            align-items: center
+            justify-content: center
+            gap: 10px
+            background-color: $buttonedMainColor
+            color: $mainColor
+            font-size: 18px
+            border-radius: 4px
+            border: none
+            cursor: pointer
+            font-weight: 500
+            .startIcon
+                font-size: 18px
+            &:hover
+                border: 1px solid $mainColor
+        .stopBtn
+            background-color: $errorColor
+            color: $blackColor
+            &:hover
+                border: 1px solid #fff
