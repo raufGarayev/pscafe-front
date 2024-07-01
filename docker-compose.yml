@@ -1,0 +1,6 @@
+version: '3.1'
+services:
+    hr:
+        build: .
+        ports:
+            - '3005:3005'
