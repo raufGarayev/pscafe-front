@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import '../tariffSettings/tariffSettings.sass'
 import useDurationStore from '../../../../stores/durationsStore'
 import { createDuration, deleteDuration, updateDuration } from '../../../../services/durations'

@@ -1,5 +1,5 @@
 import { ConfigProvider } from 'antd'
-import React, { ReactNode } from 'react'
+import { ReactNode } from 'react'
 
 const AntThemeDesign = ({children}: {children: ReactNode}) => {
   return (

@@ -1,4 +1,3 @@
-import React from 'react'
 import CustomTable from '../../../../../components/common/table'
 import { branchesColumns } from '../../../../../utils/tableColumns/branchesColumns'
 import useBranchStore from '../../../../../stores/branchesStore'

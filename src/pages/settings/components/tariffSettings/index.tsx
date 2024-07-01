@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import './tariffSettings.sass'
-import { createTariff, deleteTariff, getTariffs, updateTariff } from '../../../../services/tariffs'
+import { createTariff, deleteTariff, updateTariff } from '../../../../services/tariffs'
 import { Tariff } from '../../../../types/tariffs'
 import useTariffsStore from '../../../../stores/tariffsStore'
 

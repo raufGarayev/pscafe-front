@@ -1,8 +1,8 @@
-import { useContext, useState } from 'react'
-import './login.sass'
+import { useContext } from 'react'
 import { loginUser } from '../../services/auth'
 import { AuthContext } from "../../context/authContext";
 import { Button, Form, Input } from 'antd';
+import './login.sass'
 
 const Login = () => {
 

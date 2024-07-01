@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import useModalStore from '../../../../stores/modalStore'
 import CustomModal from '../../../../components/common/modal'
 import { Form, Input } from 'antd'
@@ -17,6 +17,7 @@ const MenuModal = () => {
     }, [selectedMenu])
 
     const handleFormChange = (values: any) => {
+        //@ts-ignore
         setSelectedMenu({...selectedMenu, ...values})
     }
 
@@ -36,6 +37,7 @@ const MenuModal = () => {
                 setMenuToStore()
             })
         } else {
+            //@ts-ignore
             deleteMenuItem(selectedMenu.id).then(res => {
                 setSelectedMenu(null)
                 toggleModal()

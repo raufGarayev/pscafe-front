@@ -8,7 +8,7 @@ import useDurationStore from '../../../../stores/durationsStore'
 import { addHours, format, parseISO } from 'date-fns'
 import { startTable, stopTable, updateRunningTable } from '../../../../services/tables'
 import './selectedTable.sass'
-import { Button, InputNumber, Tooltip } from 'antd'
+import { Button, Tooltip } from 'antd'
 import { MdFastfood, MdNextPlan } from 'react-icons/md'
 import { SiFreecodecamp } from 'react-icons/si'
 import useModalStore from '../../../../stores/modalStore'
@@ -178,7 +178,7 @@ const OfflineSelectedTable = () => {
 }
 
 const OnlineSelectedTable = () => {
-  const { selectedTable, selectTable } = useTablesStore()
+  const { selectedTable } = useTablesStore()
   const { toggleModal } = useModalStore()
   const { tariffs, getTariffsToStore } = useTariffsStore()
   const { durations, getDurationsToStore } = useDurationStore()
@@ -241,7 +241,7 @@ const OnlineSelectedTable = () => {
     }
   }, [tariffs, selectedTable])
 
-  const handleTableTimer = (action: string) => (e: any) => {
+  const handleTableTimer = (action: string) => (/* e: any */) => {
     if (action === 'stop') {
       /* stopTable(selectedTable.id).finally(() => {
         getTablesToStore()

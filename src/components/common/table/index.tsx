@@ -1,5 +1,4 @@
 import { Table } from 'antd'
-import React from 'react'
 
 interface CustomTableProps {
     data: any[]

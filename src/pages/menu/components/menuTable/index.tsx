@@ -1,4 +1,3 @@
-import React from 'react'
 import CustomTable from '../../../../components/common/table'
 import { menuColumns } from '../../../../utils/tableColumns/menuColumns'
 import useMenuStore from '../../../../stores/menuStore'

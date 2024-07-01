@@ -1,8 +1,7 @@
-import React, { useEffect } from 'react'
+import  { useEffect } from 'react'
 import Header from '../ui/header'
 import Router from '../../routes'
 import useBranchStore from '../../stores/branchesStore'
-import AntThemeDesign from './antThemeDesign'
 import useTablesStore from '../../stores/tablesStore'
 
 const Layout = () => {
