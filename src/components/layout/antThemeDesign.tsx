@@ -54,7 +54,10 @@ const AntThemeDesign = ({children}: {children: ReactNode}) => {
                     //@ts-ignore
                     borderRadius: '50%',
                 },
-                
+                Dropdown: {
+                    colorText: '#fff',
+                    colorBgElevated: '#191919',
+                },
             }
         }}
     >
