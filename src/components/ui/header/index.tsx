@@ -20,7 +20,9 @@ const Header = () => {
             <li>
               <Link to="/menu">Menyu</Link>
             </li>
-            <li>Statistika</li>
+            <li>
+              <Link to="#">Statistika</Link>
+            </li>
             <li>
               <Link to='/settings'>Sazlamalar</Link>
             </li>
@@ -28,7 +30,7 @@ const Header = () => {
         </div>
         <div className='header_user'>
           <button className='header_user__profile'>
-            <p>{user.cafeName}</p>
+            <span>{user.cafeName}</span>
             <span>[{branches.find(b => b.id === user.selectedBranch)?.name}]</span>
           </button>
         </div>
